@@ -44,7 +44,7 @@ import UIKit
     /// Check existence of files that are common for jailbroken devices
     /// - Returns: Bool: true if any path exists. The device is jailbroken.
     @objc public static func jailbreakSuspiciousFilesCheck() -> SecurityResult {
-        guard TARGET_IPHONE_SIMULATOR != 1 else { return SecurityResult(false,"[JAILBREAK] It's a Simulator, not a device", .jailbreak) }
+        //guard TARGET_IPHONE_SIMULATOR != 1 else { return SecurityResult(false,"[JAILBREAK] It's a Simulator, not a device", .jailbreak) }
         
         let paths = [
             "/usr/sbin/frida-server", // frida
